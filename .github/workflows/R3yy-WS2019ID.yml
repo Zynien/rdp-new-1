@@ -15,6 +15,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/loop.bat -OutFile loop.bat
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/wallpaper.jpg -OutFile wallpaper.jpg
     - name: Mengekstrak File Ngrok.
       run: Expand-Archive ngrok.zip
     - name: Mengkoneksikan akun RDP anda.
