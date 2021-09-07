@@ -13,7 +13,7 @@ jobs:
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest 
+        Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/loop.bat -OutFile loop.bat
     - name: Mengekstrak File Ngrok.
       run: Expand-Archive ngrok.zip
     - name: Mengkoneksikan akun RDP anda.
