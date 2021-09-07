@@ -27,8 +27,8 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
-        copy wallpaper.png D:\a\R3yy-RDP\R3yy-RDP\wallpaper.png
-        copy wallpaper.bat D:\a\R3yy-RDP\R3yy-RDP\wallpaper.bat
+        copy wallpaper.png D:\wallpaper.png
+        copy wallpaper.bat D:\wallpaper.bat
     - name: Membuat Terowongan.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Mengkoneksikan akun RDP anda.
