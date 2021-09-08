@@ -6,3 +6,4 @@ ping 127.0.0.1 > null
 cls
 echo RDP Latency : 21 ms
 goto check
+
