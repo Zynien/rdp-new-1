@@ -17,7 +17,8 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/wallpaper.jpg -OutFile wallpaper.jpg
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Memberikan Wallpaper.
-      run: cmd /c wallpaper.bat
+      REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarSmallIcons /t REG_DWORD /d 1 /f
+      reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d D:\wallpaper.jpg /f
     - name: Mengekstrak File Ngrok.
       run: Expand-Archive ngrok.zip
     - name: Mengkoneksikan akun RDP anda.
