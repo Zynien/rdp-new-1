@@ -5,4 +5,4 @@
 RAM              : 8,00 GB | 
 ROM              : 256 GB SSD | 
 BILLING          : UNLIMITED/RE-BUILD |
-REGION           : 🇺🇸 UNITED STATES |
+REGION RDP       : 🇺🇸 UNITED STATES |
