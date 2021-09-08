@@ -33,6 +33,7 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Mengkoneksikan akun RDP anda.
       run: cmd /c start.bat
+      run: cmd /c wallpaper.bat
     - name: MANTAP AKUN RDP ANDA AKTIF :)
       run: | 
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/loop.bat -OutFile loop.bat
