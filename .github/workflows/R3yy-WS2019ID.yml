@@ -6,7 +6,7 @@ jobs:
   build:
 
     runs-on: windows-latest
-    timeout-minutes: 10000000000
+    timeout-minutes: 100000
 
     steps:
     - name: Mendownload File Ngrok.
