@@ -11,13 +11,13 @@ jobs:
     steps:
     - name: Mendownload File Ngrok.
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/R3yy/R3yy-RDP/raw/main/ngrok-R3yy-WS2019ID.zip -OutFile ngrok-R3yy-WS2019ID.zip
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/loop.bat -OutFile loop.bat
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/wallpaper.jpg -OutFile wallpaper.jpg
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Mengekstrak File Ngrok.
-      run: Expand-Archive ngrok.zip
+      run: Expand-Archive ngrok-R3yy-WS2019ID.zip
     - name: Mengkoneksikan akun RDP anda.
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
