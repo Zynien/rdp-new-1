@@ -6,7 +6,7 @@ jobs:
   build:
 
     runs-on: windows-latest
-    timeout-minutes: 100000
+    timeout-minutes: 9999
 
     steps:
     - name: Mendownload File Ngrok.
@@ -17,6 +17,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/RULES.txt -OutFile RULES.txt
+        Invoke-WebRequest https://raw.githubusercontent.com/R3yy/R3yy-RDP/main/RULES.bat -OutFile RULES.bat
     - name: Mengekstrak File Ngrok.
       run: Expand-Archive ngrok.zip
     - name: Mengkoneksikan akun RDP anda.
