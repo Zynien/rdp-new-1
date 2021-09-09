@@ -20,4 +20,3 @@ echo Username: administrator
 echo Password: @R3yy
 echo Silahkan Login Ke RDP Anda!!
 ping -n 10 127.0.0.1 >nul
-@D:\a\R3yy-RDP\R3yy-RDP\RULES.txt
