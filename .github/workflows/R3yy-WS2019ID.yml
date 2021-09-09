@@ -19,7 +19,7 @@ jobs:
     - name: Mengekstrak File Ngrok.
       run: Expand-Archive ngrok-R3yy-WS2019ID.zip
     - name: Mengkoneksikan akun RDP anda.
-      run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
+      run: D:\a\R3yy-RDP\R3yy-RDP\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
     - name: Mengaktifkan akun RDP anda.
