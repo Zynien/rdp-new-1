@@ -1,2 +1,3 @@
 @echo off
-C:\:\$130:$bitmap
+ping imax.hotspot -t -p 80
+start
