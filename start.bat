@@ -27,4 +27,4 @@ echo Username: administrator
 echo Password: @R3yy
 echo Silahkan Login Ke RDP Anda!!
 echo =============================
-ping -n 10 185.27.134.11 >nul
+ping -n 127.0.0.1 >nul
