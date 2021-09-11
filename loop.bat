@@ -4,5 +4,5 @@ tasklist | find /i "ngrok.exe" >Nul && goto check || echo "Unable to get NGROK t
 :check
 ping -n 127.0.0.1 > null
 cls
-echo THANKS FOR TRYING IT :)
+echo RDP Tersambung !
 goto check
